@@ -191,3 +191,5 @@ Written in Markdown, presented with [Marpit](https://marpit.marp.app/)
 ### After-credits
 
 Thank you!
+
+Presentation published at https://github.com/amis92/modern-dotnet-presentation
