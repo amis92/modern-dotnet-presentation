@@ -181,6 +181,59 @@ https://github.com/filipw/dotnet-script#dotnet-script
 -->
 
 ---
+### Workshop instructions 1
+In a powershell, terminal or command line:
+- create and checkout a new working directory, e.g. "workshop"
+- run `dotnet new nugetconfig`
+- run `dotnet tool install -g dotnetsay --configfile nuget.config`
+- run `dotnetsay ".NET Core is cool!"`
+
+---
+### Workshop instructions 2
+- run `dotnet new console -o mytool`
+- run `code mytool` and switch to using intergrated terminal, inspect files
+- run `dotnet build` and inspect build output
+- run `dotnet add package Newtonsoft.Json` and inspect csproj
+- build again, inspect output
+
+---
+### Workshop instructions 3
+- in csproj, add `<PackAsTool>true</PackAsTool>`
+- run `dotnet pack` and inspect package in Nuget Package Explorer
+- in csproj, add `<PackageOutputPath>nuget</PackageOutputPath>`
+- run `dotnet pack` and inspect package again, now from `nuget` subdirectory
+
+---
+### Workshop instructions 4
+- run `dotnet new nugetconfig` and add `<add key="local" value="nuget" />` to it
+- run `dotnet tool install -g mytool --configfile nuget.config`
+- run `mytool` ❕
+
+---
+### Workshop instructions 5
+- back in "workshop" directory:
+  - `dotnet tool install -g dotnet-script --configfile nuget.config`
+  - `dotnet script` and play with REPL
+  - `mkdir scripting` and `code scripting`
+- in VS Code terminal run `dotnet script init`
+
+---
+### Workshop instructions 6
+
+```cs
+#! "netcoreapp2.0"
+#r "nuget: Newtonsoft.Json, 11.0"
+using Newtonsoft.Json;
+
+Console.WriteLine("Hello world from scripting!");
+var x = new { myprop = "name" };
+var json = JsonConvert.SerializeObject(x);
+Console.WriteLine(json);
+```
+
+⚠ Restart Omnisharp to use new NuGet package ⚠
+
+---
 
 ### Credits
 
