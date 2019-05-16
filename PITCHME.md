@@ -15,6 +15,9 @@ How to benefit from .NET Core, .NET Standard, MSBuild v15+, `dotnet` CLI, Sdk-st
 <!--
 Remind people to install .NET Core SDK (v2.2, check if they have Visual Studio Code, Omnisharp extension)
 https://docs.microsoft.com/en-gb/dotnet/core/tutorials/with-visual-studio-code
+Useful: Nuget Package Explorer
+https://github.com/NuGetPackageExplorer/NuGetPackageExplorer#how-to-install
+
 -->
 
 ---
@@ -166,6 +169,12 @@ and raise your factor of being cool!
 <!--
 Bootstrapping
 https://docs.microsoft.com/en-gb/dotnet/core/tutorials/with-visual-studio-code
+
+.csproj properties
+https://docs.microsoft.com/pl-pl/dotnet/core/tools/csproj#nuget-metadata-properties
+
+Create .NET Core Global Tool
+https://docs.microsoft.com/pl-pl/dotnet/core/tools/global-tools-how-to-create
 
 -->
 
